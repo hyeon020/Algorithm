@@ -9,11 +9,12 @@ class String3 {
 		String[] s = str.split(" ");
 		for(String x : s) {
 			int len = x.length();
-			if(len>m) {
+			if(len>m) { //만약 >=하면 뒤에서 똑같을경우 뒤에꺼로 갱신된다.
 				m = len;
 				answer = x;
 			}
-		}
+		} //split 사용한 것
+		
 		return answer;
 	}
 	public static void main(String[] args) {

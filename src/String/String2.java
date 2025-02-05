@@ -5,7 +5,7 @@ import java.util.Scanner;
 class String2 {
 	public String solution(String str) {
 		String answer = "";
-		for(char i : str.toCharArray()) {
+		for(char i : str.toCharArray()) { //문자 배열화
 			if(Character.isLowerCase(i)) {
 				answer += Character.toUpperCase(i);
 			}
