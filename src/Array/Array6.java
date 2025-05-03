@@ -18,8 +18,7 @@ public class Array6 {
 			int tmp=arr[i];
 			int res=0;
 			while(tmp>0) {
-				int t= tmp%10;
-				res=res*10+ t;
+				res=res*10+ (tmp%10);
 				tmp=tmp/10;
 			}
 			if(isPrime(res)) answer.add(res);
